@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Search Animation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Binary Search Animation</h1>
+
+      <div class="input-section">
+        <label for="arrayInput">Enter Sorted Array (comma-separated):</label>
+        <input
+          type="text"
+          id="arrayInput"
+          placeholder="e.g., 2, 5, 7, 10, 15"
+        />
+
+        <label for="searchValue">Enter Search Value:</label>
+        <input type="number" id="searchValue" placeholder="e.g., 10" />
+
+        <button onclick="startBinarySearch()">Start Search</button>
+      </div>
+
+      <table id="arrayTable">
+        <!-- Dynamic table rows will be inserted here -->
+      </table>
+
+      <div class="result-section">
+        <h2>Result</h2>
+        <p id="searchResult"></p>
+      </div>
+
+      <div class="result-section">
+        <h2>Time Result</h2>
+        <p id="searchResult"></p>
+        <p id="timer"></p>
+        <!-- Added timer display -->
+      </div>
+
+      <div class="complexity-section">
+        <h2>Time and Space Complexity</h2>
+        <p id="timeComplexity"></p>
+        <p id="spaceComplexity"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
